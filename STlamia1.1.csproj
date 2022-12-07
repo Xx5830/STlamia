@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8935DD0B-9698-45C9-9936-BEC6DC35D97C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>STlamia1._1</RootNamespace>
+    <AssemblyName>STlamia1.1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnalitick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnalitick.Designer.cs">
+      <DependentUpon>FormAnalitick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalendary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalendary.Designer.cs">
+      <DependentUpon>FormCalendary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView.Designer.cs">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageFon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageFon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LastChanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastChanceForm.Designer.cs">
+      <DependentUpon>LastChanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USBlank.Designer.cs">
+      <DependentUpon>USBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USCell.Designer.cs">
+      <DependentUpon>USCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USInfo.Designer.cs">
+      <DependentUpon>USInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddForm.resx">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnalitick.resx">
+      <DependentUpon>FormAnalitick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalendary.resx">
+      <DependentUpon>FormCalendary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormView.resx">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageFon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ImageFon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastChanceForm.resx">
+      <DependentUpon>LastChanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="USBlank.resx">
+      <DependentUpon>USBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USCell.resx">
+      <DependentUpon>USCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USInfo.resx">
+      <DependentUpon>USInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mainfon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tablofon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mainfon-695x556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel-171x556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel3-171x43New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel3-171x43Old.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel3-171x56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataFileRes\ResTask.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Add_Fon5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
