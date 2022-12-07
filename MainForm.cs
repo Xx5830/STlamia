@@ -197,6 +197,10 @@ namespace STlamia1._1
                 AnalitickBut.Image = ImageFon.Panel3_171x43New; menu = partMenu.analitick;
             }
 
+            //input Data
+            {
+                formAnalitick.ReData(formView.GetAnalitickInfo());
+            }
             //Work Form
             {
                 MainPanel.Controls.Clear();

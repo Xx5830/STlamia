@@ -271,11 +271,70 @@ namespace STlamia1._1
                 }
             }
         }
+        public AnalitickExample GetAnalitickInfo()
+        {
+            DateTime daytime = DateTime.Now, monthtime = DateTime.Now;
+            DateTime Medayismax = DateTime.Now, Memonthismax = DateTime.Now;
+            int Memaxday = 0, Memaxmonth = 0, Memaxdifficult = 0, Mecounttask = 0;
+            int cuday = 0, cumonth = 0;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                for (int j = 0; j < list[i].Count; j++)
+                {
+                    ++Mecounttask;
+                    if (int.Parse(list[i][j].difficult) > Memaxdifficult)
+                    {
+                        Memaxdifficult = int.Parse(list[i][j].difficult);
+                    }
+
+                    if (list[i][j]._Me.Month == monthtime.Month)
+                    {
+                        ++cumonth;
+                    }
+                    else
+                    {
+                        if (cumonth > Memaxmonth)
+                        {
+                            Memonthismax = monthtime;
+
+                            Memaxmonth = cumonth;
+                        }
+
+                        cumonth = 1; monthtime = list[i][j]._Me;
+                    }
+
+                    if (list[i][j]._Me.Day == daytime.Day)
+                    {
+                        ++cuday;
+                    }
+                    else
+                    {
+                        if (cuday > Memaxday)
+                        {
+                            Medayismax = daytime;
+
+                            Memaxday = cuday;
+                        }
+                        Memaxday = cuday;
+
+                        cuday = 1; daytime = list[i][j]._Me;
+                    }
+                }
+            }
+
+            return new AnalitickExample { maxday = Memaxday, maxmonth = Memaxmonth, maxdifficult = Memaxdifficult, counttask = Mecounttask, dayismax = Medayismax, monthismax = Memonthismax };
+        }
     }
 
     public class Example
     {
         public string year, month, day, hour, minute, task, difficult, referens;
         public bool flag;
+    }
+    public class AnalitickExample
+    {
+        public int maxday, maxmonth, maxdifficult, counttask;
+        public DateTime dayismax, monthismax;
     }
 }
