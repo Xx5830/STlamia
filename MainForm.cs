@@ -147,6 +147,7 @@ namespace STlamia1._1
         FormCalendary formCalendary = new FormCalendary { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
         FormAnalitick formAnalitick = new FormAnalitick() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
         FormView formView = new FormView() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        int a;
 
 
         //Enum
